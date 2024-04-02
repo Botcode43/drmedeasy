@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/signupglobal.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/signupindex.css' %}">
+    <!-- Add other stylesheet links -->
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap"
+  />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+  />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Open Sans:wght@400&display=swap"
+  />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+  />
+    <!-- Add your script for password visibility toggle -->
+  </head>
+  <body>
+
+
+    <div class="sign-up">
+      <main class="desktop-5">
+        <div class="wrapper-frame-28">
+          <!-- Your existing HTML structure -->
+        </div>
+        <div class="frame-parent">
+          <!-- Your existing HTML structure -->
+          <div class="rectangle-parent">
+            <div class="frame-child"></div>
+            <div class="object-wrapper">
+              <img
+                class="object-icon"
+                loading="eager"
+              
+                src="{% static 'img/Logo.png' %}" alt="Logo"
+              />
+            </div>
+            <h3 class="medicust">Dr. Med-Ease</h3>
+          </div>
+          <div class="a-professional-and-friendly-ca-parent">
+            <h1 class="a-professional-and">Dr.Med-Ease</h1>
+            <div class="frame-wrapper">
+              <div class="medical-and-health-parent">
+                <h3 class="medical-and-health">Medical And Health</h3>
+                <h1 class="a-professional-and1">
+                  A professionaland friendly careprovider.
+                </h1>
+                <div class="excepteur-sint-occaecat">
+                  Excepteur sint occaecat cupidatat non proident sunt officia
+                </div>
+                <button class="all-doctors-wrapper">
+                  Home Page
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="link-frame">
+          <div class="main">
+            <div class="form-link">
+              <div class="email-input-frame">
+                <!-- Your existing HTML structure -->
+                <img
+                  class="object-icon1"
+                  src="{% static 'img/bluelogo.png' %}" alt="Blue Logo"
+                />
+
+                <div class="medicust-text">
+                  <h2 class="medicust1">Dr. Med-Ease</h2>
+                </div>
+                
+              </div>
+            </div>
+            <form action="{% url 'signup' %}" method="post" class="link-frame1">
+              {% csrf_token %}
+              <!-- Your existing form elements -->
+              <div class="form-label-email">
+                <div class="form-label-password">
+                  <div class="form-label">username</div>
+                  <div class="form-input">
+                    <input
+                      class="enter-your-name"
+                      placeholder="Enter Your name"
+                      type="text"
+                      name="username"
+                    />
+                  </div>
+                </div>
+                  <div class="form-label-email">
+                    <div class="form-label-password">
+                      <div class="form-label">First Name</div>
+                      <div class="form-input">
+                        <input
+                          class="enter-your-name"
+                          placeholder="Enter Your name"
+                          type="text"
+                          name="first_name"
+                        />
+                      </div>
+                </div>
+                <div class="form-label-email">
+                  <div class="form-label-password">
+                    <div class="form-label">last Name</div>
+                    <div class="form-input">
+                      <input
+                        class="enter-your-name"
+                        placeholder="Enter Your name"
+                        type="text"
+                        name="last_name"
+                      />
+                    </div>
+              </div>
+                <div class="form-label-password1">
+                  <div class="form-label1">Email*</div>
+                  <div class="form-input1">
+                    <input
+                      class="enter-your-email"
+                      placeholder="Enter  your email"
+                      type="text"
+                      name="email"
+                    />
+                  </div>
+                </div>
+                <div class="form-label-password2">
+                  <div class="form-label2">Phone Number*</div>
+                  <div class="form-input2">
+                    <input
+                      class="enter-your-phone"
+                      placeholder="Enter Your phone number"
+                      type="text"
+                      name="phonenumber"
+                    />
+                  </div>
+                </div>
+                <div class="form-label-password3">
+                  <div class="form-label3">Create password*</div>
+                  <div class="form-input3">
+                    <input
+                      class="enter-password"
+                      placeholder="Enter Password"
+                      type="password"   id="myInput"
+                      name="password"
+                    />
+                   </div>
+                </div>
+                <div class="form-label-password4">
+                  <div class="form-label4">Confirm Password*</div>
+                  <div class="form-input4">
+                    <input
+                      class="enter-password"
+                      placeholder="Enter Password"
+                      type="password" id="mycInput"
+                      name="cpassword"
+                    />
+                    
+                  </div>
+                  
+              </div>
+              <div><input type="checkbox" onclick="myFunction()"><span class="pass-show">Show password</span></div>
+              
+            </div>
+              <div class="enter-phone-number">
+                <button type="submit"   value="submit">
+                  Sign-up
+                </button>              
+                <div class="frame-login-with-google">
+                  
+                    <span class="dont-have-an">Don’t have an account? </span>
+                    <button class="register">Register</button>
+                  
+                </div>
+              </div>
+              <button class="link">
+                <img
+                  class="google-iconpng"
+                  src="{% static 'img/google-icon.png.png' %}" alt="Google Icon"
+                />
+
+                <div class="login-with-google">login with Google</div>
+              </button>
+            </form>
+          </div>
+        </div>
+      </main>
+    </div>
+    
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myInput");
+        if (x.type === "password") {
+          x.type = "text";
+        } else {
+          x.type = "password";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,555 @@
+.frame-parent-icon {
+    width: 466px;
+    position: absolute;
+    margin: 0 !important;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    max-height: 100%;
+    overflow: hidden;
+  }
+ /* Adjust the styles for the time selection */
+.time-selection {
+    margin-top: 20px; /* Adjust margin as needed */
+  }
+  
+  /* Adjust the width of the time input box */
+  .form-input4 input[type="time"] {
+
+    width: 320px;
+  }
+  
+  /* Adjust the text color for the time input */
+  .form-input4 input[type="time"] {
+    color: #333; /* Change text color as needed */
+    background-color: #F8F8F8;
+    border: none;
+    align-self: stretch;
+    border-radius: var(--br-5xs);
+    background-color: var(--color-whitesmoke);
+    border: 1px solid var(--color-lightgray);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--padding-base) var(--padding-xl) var(--padding-mini)
+      var(--padding-2xl);
+    gap: var(--gap-xl);
+    white-space: nowrap;
+    color: var(--color-darkgray);
+    font-family: var(--font-inter);
+  }
+  
+  .object-icon {
+    width: 33.9px;
+    height: 29.5px;
+    position: relative;
+    object-fit: cover;
+  }
+  .object-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 0 7px;
+  }
+  .medicust {
+    position: relative;
+    font-size: 25px;
+    font-family: var(--font-ubuntu);
+    color: var(--color-white);
+    text-align: left;
+  }
+  .frame-parent {
+    cursor: pointer;
+    border: 0;
+    padding: var(--padding-xs) 37px var(--padding-smi) 36px;
+    background-color: rgba(0, 136, 255, 0.5);
+    border-radius: 0 0 25px 0;
+    box-shadow: 0 4px 40px -10px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 4px;
+  }
+  .object-icon1 {
+    height: 54px;
+    width: 62px;
+    position: relative;
+    object-fit: cover;
+  }
+  .medicust1 {
+    margin: 0;
+    height: 34px;
+    position: relative;
+    font-size: inherit;
+    font-weight: 700;
+    font-family: inherit;
+    display: inline-block;
+  }
+  .medicust-text,
+  .object-within-doctor {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .medicust-text {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 0 4px;
+  }
+  .object-within-doctor {
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 9px;
+  }
+  .all-doctors {
+    position: relative;
+    font-size: var(--font-size-base);
+    font-weight: 500;
+    font-family: var(--font-ubuntu);
+    color: var(--color-white);
+    text-align: center;
+  }
+  .all-doctors-text {
+    cursor: pointer;
+    border: 0;
+    padding: var(--padding-sm) 24px var(--padding-smi) 28px;
+    background-color: #7FC3FF;
+    border-radius: var(--br-8xs);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+  }
+  .all-doctors-text:hover,
+  .form-link:hover {
+    background-color: var(--color-cornflowerblue);
+  }
+  .doctor-frame,
+  .search-frame {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    max-width: 100%;
+  }
+  .doctor-frame {
+    width: 791px;
+    justify-content: space-between;
+    gap: var(--gap-xl);
+  }
+  .search-frame {
+    align-self: stretch;
+    justify-content: flex-start;
+    padding: 0 var(--padding-2xl);
+    box-sizing: border-box;
+    font-family: var(--font-ubuntu);
+  }
+  .find-your-doctor {
+    margin: 0;
+    position: relative;
+    font-size: inherit;
+    line-height: 24px;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-family: inherit;
+  }
+  .search-for-doctor {
+    width: 513px;
+    border: 0;
+    outline: 0;
+    font-family: var(--font-inter);
+    font-size: var(--font-size-base);
+    background-color: transparent;
+    height: 19px;
+    position: relative;
+    color: var(--color-darkgray);
+    text-align: left;
+    display: flex;
+    align-items: center;
+  }
+  .filter-vector-icon {
+    height: 25px;
+    width: 23.1px;
+    position: relative;
+  }
+  .form-input {
+    align-self: stretch;
+    border-radius: 50px;
+    background-color: var(--color-whitesmoke);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15) inset;
+    border: 1px solid var(--color-lightgray);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: var(--padding-xs) 25px var(--padding-smi) var(--padding-2xl);
+    gap: var(--gap-xl);
+  }
+  .frame-for-find-your-doctor,
+  .frame-with-buttons {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+  .frame-with-buttons {
+    width: 513px;
+    flex-direction: column;
+    gap: var(--gap-16xl);
+  }
+  .frame-for-find-your-doctor {
+    align-self: stretch;
+    flex-direction: row;
+    padding: 0 var(--padding-2xl);
+    box-sizing: border-box;
+    font-size: 35px;
+    color: #163c86;
+  }
+  .frame-label-search {
+    width: 788px;
+    height: 1px;
+    position: relative;
+    border-top: 1px solid var(--color-darkgray);
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .categorize-the-doctor,
+  .form-label {
+    position: relative;
+    line-height: 24px;
+    text-transform: capitalize;
+  }
+  .categorize-the-doctor {
+    margin: 0;
+    font-size: inherit;
+    font-weight: 600;
+    font-family: inherit;
+  }
+  .form-label {
+    width: 214.1px;
+    display: flex;
+    align-items: center;
+  }
+  .choose-location {
+    position: relative;
+    white-space: pre-wrap;
+  }
+  .form-link-search {
+    height: 10px;
+    width: 17.1px;
+    position: relative;
+  }
+  .form-input1 {
+    align-self: stretch;
+    border-radius: var(--br-5xs);
+    background-color: var(--color-whitesmoke);
+    border: 1px solid var(--color-lightgray);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--padding-base) var(--padding-xl) var(--padding-mini)
+      var(--padding-2xl);
+    gap: var(--gap-xl);
+    white-space: nowrap;
+    color: var(--color-darkgray);
+    font-family: var(--font-inter);
+  }
+  .form-label-email {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-5xs);
+  }
+  .form-label1 {
+    width: 214.1px;
+    line-height: 24px;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+  }
+  .form-label1,
+  .select-doctor-category,
+  .vector-icon {
+    position: relative;
+  }
+  .select-doctor-category,.choose-location,.select-appointment-session{
+    border: none;
+    background:none;
+    font-size: 17px;
+    color: rgb(129, 129, 129);
+    width: 2000px;
+  
+    
+    
+  }
+  .select-doctor-category option{
+    font-size: 15px;
+    text-align: left;
+    border: none;
+
+  }
+  .select-doctor-category option:hover{
+    font-weight:bold ;
+  }
+  .vector-icon {
+    height: 10px;
+    width: 17.1px;
+  }
+  .form-input2 {
+    align-self: stretch;
+    border-radius: var(--br-5xs);
+    background-color: var(--color-whitesmoke);
+    border: 1px solid var(--color-lightgray);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--padding-base) var(--padding-xl) var(--padding-mini)
+      var(--padding-2xl);
+    gap: var(--gap-xl);
+    white-space: nowrap;
+    color: var(--color-darkgray);
+    font-family: var(--font-inter);
+  }
+  .form-label-email1 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-5xs);
+  }
+  /* Drop Down */
+  .form-label1{
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-5xs);
+  }
+  .search-doctor {
+    position: relative;
+    font-size: var(--font-size-base);
+    line-height: 24px;
+    text-transform: capitalize;
+    font-family: var(--font-inter);
+    color: var(--color-white);
+    text-align: center;
+  }
+  .form-link {
+    cursor: pointer;
+    border: 0;
+    padding: var(--padding-xs) var(--padding-sm) var(--padding-xs)
+      var(--padding-xl);
+    background-color: #7FC3FF;
+    border-radius: var(--br-8xs);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    white-space: nowrap;
+  }
+  .email-input-frame {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-16xl);
+    max-width: 100%;
+  }
+  .form-label2 {
+    width: 136.3px;
+    line-height: 24px;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+  }
+  .form-label2,
+  .select-appointment-session {
+    position: relative;
+  }
+  .vector-session-icon {
+    height: 10px;
+    width: 17.1px;
+    position: relative;
+  }
+  .form-input3 {
+    align-self: stretch;
+    border-radius: var(--br-5xs);
+    background-color: var(--color-whitesmoke);
+    border: 1px solid var(--color-lightgray);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--padding-base) var(--padding-xl) var(--padding-mini)
+      var(--padding-2xl);
+    gap: var(--gap-xl);
+    white-space: nowrap;
+    color: var(--color-darkgray);
+    font-family: var(--font-inter);
+  }
+  .cancel-button,
+  .location-form,
+  .main-frame1 {
+    display: flex;
+    align-items: flex-start;
+    max-width: 100%;
+  }
+  .cancel-button {
+    width: 360px;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: var(--gap-5xs);
+  }
+  .location-form,
+  .main-frame1 {
+    align-self: stretch;
+  }
+  .location-form {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: var(--gap-xl);
+    font-size: var(--font-size-base);
+    color: var(--color-dimgray);
+  }
+  .main-frame1 {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0 var(--padding-2xl);
+    box-sizing: border-box;
+    gap: var(--gap-16xl);
+    font-size: 22px;
+    color: var(--color-darkgray);
+  }
+  .material-symbolscancel {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin: 0 !important;
+    top: 0;
+    right: -100px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .main {
+    width: 937px;
+    border-radius: 10px;
+    background-color: var(--color-white);
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.07);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: var(--padding-8xl) var(--padding-8xl) 79px;
+    box-sizing: border-box;
+    position: relative;
+    gap: 69px;
+    max-width: 100%;
+    z-index: 1;
+    text-align: left;
+    font-size: 30px;
+    color: var(--color-dodgerblue-100);
+    font-family: var(--font-open-sans);
+  }
+  .doctor-filtering,
+  .main-frame {
+    display: flex;
+    align-items: flex-start;
+    box-sizing: border-box;
+  }
+  .main-frame {
+    align-self: stretch;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 var(--padding-xl);
+    max-width: 100%;
+  }
+  .doctor-filtering {
+    width: 100%;
+    position: relative;
+    background-color: var(--color-white);
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0 1px 114px 0;
+    gap: 66px;
+    letter-spacing: normal;
+  }
+  @media screen and (max-width: 950px) {
+    .main {
+      gap: 34px;
+    }
+  }
+  @media screen and (max-width: 925px) {
+    .medicust1 {
+      font-size: 24px;
+    }
+    .find-your-doctor {
+      font-size: 28px;
+      line-height: 19px;
+    }
+    .location-form {
+      flex-wrap: wrap;
+    }
+    .main {
+      padding-top: var(--padding-xl);
+      padding-bottom: 51px;
+      box-sizing: border-box;
+    }
+    .doctor-filtering {
+      gap: 33px;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .doctor-frame {
+      flex-wrap: wrap;
+    }
+    .frame-with-buttons,
+    .main {
+      gap: var(--gap-mid);
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .medicust {
+      font-size: 20px;
+    }
+    .medicust1 {
+      font-size: var(--font-size-lg);
+    }
+    .object-within-doctor {
+      flex-wrap: wrap;
+    }
+    .find-your-doctor {
+      font-size: 21px;
+      line-height: 14px;
+    }
+    .categorize-the-doctor {
+      font-size: var(--font-size-lg);
+      line-height: 19px;
+    }
+    .email-input-frame,
+    .main-frame1 {
+      gap: var(--gap-mid);
+    }
+    .main {
+      padding-bottom: 33px;
+      box-sizing: border-box;
+    }
+    .doctor-filtering {
+      gap: 16px;
+    }
+  }
+  .all-doctors-text:hover,.form-link:hover{
+    background-color: #0088FF;
+  }

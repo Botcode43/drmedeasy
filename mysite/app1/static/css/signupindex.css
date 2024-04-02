@@ -1,0 +1,741 @@
+.wrapper-frame-28-child {
+    height: 100%;
+    width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    flex-shrink: 0;
+    object-fit: contain;
+    position: absolute;
+    left: 0;
+    top: 4px;
+    transform: scale(1.129);
+  }
+  .frame-child,
+  .wrapper-frame-28 {
+    height: 100%;
+    position: absolute;
+    margin: 0 !important;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .wrapper-frame-28 {
+    width: 466px;
+    border-radius: 0 0 0 var(--br-3xs);
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    background: url(Background\ frame.png);
+  }
+  .frame-child {
+    width: 100%;
+    left: 0;
+    border-radius: 0 0 25px 0;
+    background-color: rgba(128, 195, 255, 0.5);
+    box-shadow: 0 4px 40px -10px rgba(0, 0, 0, 0.15);
+  }
+  .object-icon {
+    width: 33.9px;
+    height: 29.5px;
+    position: relative;
+    object-fit: cover;
+    z-index: 1;
+  }
+  .object-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 0 var(--padding-5xs);
+  }
+  .medicust {
+    margin: 0;
+    position: relative;
+    font-size: inherit;
+    font-weight: 700;
+    font-family: inherit;
+    z-index: 1;
+  }
+  .rectangle-parent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: var(--padding-xs) 37px var(--padding-xs) 36px;
+    position: relative;
+    gap: 4px;
+    z-index: 2;
+  }
+  .a-professional-and {
+    align-self: stretch;
+    font-size: inherit;
+    line-height: 77px;
+    font-family: inherit;
+  }
+  .a-professional-and,
+  .a-professional-and1,
+  .medical-and-health {
+    margin: 0;
+    position: relative;
+    font-weight: 700;
+  }
+  .medical-and-health {
+    width: 222px;
+    font-size: inherit;
+    line-height: 28px;
+    font-family: inherit;
+    display: inline-block;
+  }
+  .a-professional-and1 {
+    align-self: stretch;
+    font-size: 70px;
+    line-height: 77px;
+    font-family: var(--font-ubuntu);
+    color: #0a2e72;
+  }
+  .excepteur-sint-occaecat {
+    width: 552px;
+    position: relative;
+    font-size: var(--font-size-xl);
+    line-height: 28px;
+    color: #454d5d;
+    display: inline-block;
+    max-width: 100%;
+  }
+  .all-doctors {
+    position: relative;
+    font-size: var(--font-size-base);
+    font-weight: 500;
+    font-family: var(--font-ubuntu);
+    color: var(--color-white);
+    text-align: center;
+  }
+  button {
+    cursor: pointer;
+    border: 0;
+    padding: 14px 24px var(--padding-smi) 28px;
+    background-color: var(--color-lightskyblue-100);
+    border-radius: var(--br-8xs);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    color: white;
+    font-size: large;
+  }
+
+  .frame-wrapper,
+  .medical-and-health-parent {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+  .medical-and-health-parent {
+    flex: 1;
+    flex-direction: column;
+    gap: 22px;
+  }
+  .frame-wrapper {
+    align-self: stretch;
+    flex-direction: row;
+    padding: 0 var(--padding-smi) 0 0;
+    box-sizing: border-box;
+    font-size: 22px;
+    font-family: var(--font-roboto);
+  }
+  .a-professional-and-friendly-ca-parent,
+  .frame-parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+  .a-professional-and-friendly-ca-parent {
+    align-self: stretch;
+    border-radius: 20px;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.14),
+      rgba(255, 255, 255, 0.6)
+    );
+    box-shadow: 0 70px 40px rgba(0, 136, 255, 0.15);
+    backdrop-filter: blur(19.03px);
+    border: 1px solid var(--color-white);
+    box-sizing: border-box;
+    overflow: hidden;
+    align-items: center;
+    padding: 33px 63px 42px 100px;
+    gap: var(--gap-24xl);
+    mix-blend-mode: normal;
+    font-size: 100px;
+    color: var(--color-lightskyblue-100);
+  }
+  .frame-parent {
+    width: 766px;
+    align-items: flex-start;
+    gap: var(--gap-143xl);
+    min-width: 766px;
+    
+  }
+  .object-icon1 {
+    height: 54px;
+    width: 62px;
+    position: relative;
+    object-fit: cover;
+  }
+  .medicust1 {
+    margin: 0;
+    height: 34px;
+    position: relative;
+    font-size: inherit;
+    font-weight: 700;
+    font-family: inherit;
+    display: inline-block;
+    color: #0088FF;
+  }
+  .medicust-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 0 4px;
+  }
+  .email-input-frame,
+  .form-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .email-input-frame {
+    align-items: flex-end;
+    gap: 9px;
+  }
+  .form-link {
+    align-items: flex-start;
+    padding: 0 0 0 var(--padding-5xs);
+  }
+  .enter-your-name,
+  .form-label {
+    font-size: var(--font-size-base);
+    position: relative;
+    text-align: left;
+  }
+  .form-label {
+    line-height: 24px;
+    text-transform: capitalize;
+    font-family: var(--font-open-sans);
+    color: var(--color-dimgray-100);
+  }
+  .enter-your-name {
+    width: 125px;
+    border: 0;
+    outline: 0;
+    font-family: var(--font-inter);
+    background-color: transparent;
+    height: 19px;
+    color: var(--color-darkgray-100);
+    display: flex;
+    align-items: center;
+  }
+  .form-input,
+  .form-label-password {
+    align-self: stretch;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .form-input {
+    border-radius: var(--br-5xs);
+    background-color: var(--color-whitesmoke);
+    border: 1px solid var(--color-lightgray);
+    flex-direction: row;
+    align-items: center;
+    padding: var(--padding-base) var(--padding-2xl) var(--padding-mini);
+  }
+  .form-label-password {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--gap-5xs);
+  }
+  .enter-your-email,
+  .form-label1 {
+    font-size: var(--font-size-base);
+    position: relative;
+    text-align: left;
+    display: flex;
+    align-items: center;
+  }
+  .form-label1 {
+    width: 73.5px;
+    line-height: 24px;
+    text-transform: capitalize;
+    font-family: var(--font-open-sans);
+    color: var(--color-dimgray-100);
+  }
+  .enter-your-email {
+    width: 127px;
+    border: 0;
+    outline: 0;
+    font-family: var(--font-inter);
+    background-color: transparent;
+    height: 19px;
+    color: var(--color-darkgray-100);
+    white-space: pre-wrap;
+  }
+  .form-input1,
+  .form-label-password1 {
+    align-self: stretch;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .form-input1 {
+    border-radius: var(--br-5xs);
+    background-color: var(--color-whitesmoke);
+    border: 1px solid var(--color-lightgray);
+    flex-direction: row;
+    align-items: center;
+    padding: var(--padding-base) var(--padding-2xl) var(--padding-mini);
+  }
+  .form-label-password1 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--gap-5xs);
+  }
+  .enter-your-phone,
+  .form-label2 {
+    font-size: var(--font-size-base);
+    position: relative;
+    text-align: left;
+  }
+  .form-label2 {
+    line-height: 24px;
+    text-transform: capitalize;
+    font-family: var(--font-open-sans);
+    color: var(--color-dimgray-100);
+  }
+  .enter-your-phone {
+    width: 193px;
+    border: 0;
+    outline: 0;
+    font-family: var(--font-inter);
+    background-color: transparent;
+    height: 19px;
+    color: var(--color-darkgray-100);
+    display: flex;
+    align-items: center;
+  }
+  .form-input2,
+  .form-label-password2 {
+    align-self: stretch;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .form-input2 {
+    border-radius: var(--br-5xs);
+    background-color: var(--color-whitesmoke);
+    border: 1px solid var(--color-lightgray);
+    flex-direction: row;
+    align-items: center;
+    padding: var(--padding-base) var(--padding-2xl) var(--padding-mini);
+  }
+  .form-label-password2 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--gap-5xs);
+  }
+  .enter-password,
+  .form-label3 {
+    font-size: var(--font-size-base);
+    position: relative;
+    text-align: left;
+  }
+  .form-label3 {
+    line-height: 24px;
+    text-transform: capitalize;
+    font-family: var(--font-open-sans);
+    color: var(--color-dimgray-100);
+  }
+  .enter-password {
+    width: 118.6px;
+    border: 0;
+    outline: 0;
+    font-family: var(--font-inter);
+    background-color: transparent;
+    height: 20px;
+    color: var(--color-darkgray-100);
+    display: flex;
+    align-items: center;
+  }
+  .form-icon {
+    height: 18px;
+    width: 18px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .form-input3 {
+    align-self: stretch;
+    border-radius: var(--br-5xs);
+    background-color: var(--color-whitesmoke);
+    border: 1px solid var(--color-lightgray);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--padding-mini) var(--padding-smi) var(--padding-mini)
+      var(--padding-2xl);
+    gap: var(--gap-xl);
+  }
+  .form-label-password3 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-5xs);
+  }
+  .enter-password1,
+  .form-label4 {
+    font-size: var(--font-size-base);
+    position: relative;
+    text-align: left;
+  }
+  .form-label4 {
+    line-height: 24px;
+    text-transform: capitalize;
+    font-family: var(--font-open-sans);
+    color: var(--color-dimgray-100);
+  }
+  .enter-password1 {
+    width: 118.6px;
+    border: 0;
+    outline: 0;
+    font-family: var(--font-inter);
+    background-color: transparent;
+    height: 20px;
+    color: var(--color-darkgray-100);
+    display: flex;
+    align-items: center;
+  }
+  .form-icon1 {
+    height: 18px;
+    width: 18px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .form-input4 {
+    align-self: stretch;
+    border-radius: var(--br-5xs);
+    background-color: var(--color-whitesmoke);
+    border: 1px solid var(--color-lightgray);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--padding-mini) var(--padding-smi) var(--padding-mini)
+      var(--padding-2xl);
+    gap: var(--gap-xl);
+  }
+  .form-label-email,
+  .form-label-password4 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .form-label-password4 {
+    gap: var(--gap-5xs);
+  }
+  .form-label-email {
+    flex: 1;
+    gap: 23px;
+  }
+  .sign-up1 {
+    position: relative;
+    font-size: var(--font-size-base);
+    line-height: 24px;
+    text-transform: capitalize;
+    font-family: var(--font-inter);
+    color: var(--color-white);
+    text-align: center;
+  }
+  .form-link1 {
+    cursor: pointer;
+    border: 0;
+    padding: 11px var(--padding-8xl) 10px 26px;
+    background-color: var(--color-lightskyblue-100);
+    border-radius: var(--br-8xs);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .dont-have-an {
+    color: var(--color-dimgray-200);
+    font-size: 15px;
+    text-decoration: none;
+    margin-top: 5px;
+    padding-right: 5px;
+    }
+  .register {
+    color: #00715d;
+  }
+  .dont-have-an-container {
+    position: relative;
+    font-size: var(--font-size-sm);
+    letter-spacing: 0.5px;
+    line-height: 20px;
+    font-family: var(--font-inter);
+    text-align: center;
+    
+  }
+  .frame-login-with-google {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+  .enter-phone-number {
+    width: 321px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-15xl);
+    max-width: 100%;
+  }
+  .google-iconpng {
+    height: 24px;
+    width: 24px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    object-fit: cover;
+    min-height: 24px;
+  }
+  .login-with-google {
+    position: relative;
+    font-size: var(--font-size-sm);
+    line-height: 21px;
+    font-weight: 500;
+    font-family: var(--font-inter);
+    color: var(--color-dimgray-200);
+    text-align: center;
+  }
+  .link {
+    cursor: pointer;
+    border: 1px solid rgba(168, 168, 168, 0.42);
+    padding: var(--padding-smi) var(--padding-xl);
+    background-color: transparent;
+    align-self: stretch;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 10px;
+    white-space: nowrap;
+  }
+  .link:hover {
+    background-color: rgba(117, 117, 117, 0.09);
+    border: 1px solid rgba(117, 117, 117, 0.42);
+    box-sizing: border-box;
+  }
+  .link-frame1 {
+    margin: 0;
+    align-self: stretch;
+    flex: 1;
+    align-items: flex-start;
+    padding: 0 var(--padding-2xl);
+    gap: var(--gap-11xl);
+  }
+  
+  .link-frame,
+  .link-frame1,
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .main {
+    align-self: stretch;
+    flex: 1;
+    border-radius: var(--br-3xs);
+    background-color: var(--color-white);
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.07);
+    align-items: center;
+    padding: var(--padding-8xl);
+    gap: var(--gap-32xl);
+    z-index: 1;
+  }
+  .link-frame {
+    height: 1118px;
+    width: 507px;
+    align-items: flex-start;
+    padding: 223px 0 0;
+    min-width: 507px;
+    font-size: var(--font-size-11xl);
+    color: var(--color-lightskyblue-100);
+  }
+  .desktop-5,
+  .sign-up {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+  }
+  .desktop-5 {
+    flex: 1;
+    background-color: rgba(0, 136, 255, 0.1);
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 0 126px;
+    box-sizing: border-box;
+    gap: var(--gap-32xl);
+    max-width: 100%;
+    text-align: left;
+    font-size: 25px;
+    color: var(--color-white);
+    font-family: var(--font-ubuntu);
+  }
+  .sign-up {
+    width: 100%;
+    background-color: var(--color-white);
+    align-items: center;
+    justify-content: center;
+    letter-spacing: normal;
+  }
+  @media screen and (max-width: 1275px) {
+    .frame-parent {
+      flex: 1;
+    }
+    .link-frame {
+      flex: 1;
+      padding-top: 145px;
+      box-sizing: border-box;
+    }
+    .desktop-5 {
+      flex-wrap: wrap;
+    }
+  }
+  @media screen and (max-width: 1100px) {
+    .frame-parent {
+      min-width: 100%;
+    }
+    .desktop-5,
+    .main {
+      box-sizing: border-box;
+    }
+    .main {
+      padding-top: var(--padding-xl);
+      padding-bottom: var(--padding-xl);
+    }
+    .desktop-5 {
+      padding-bottom: 82px;
+    }
+  }
+  @media screen and (max-width: 750px) {
+    .a-professional-and {
+      font-size: 50px;
+      line-height: 46px;
+    }
+    .a-professional-and1 {
+      font-size: 56px;
+      line-height: 62px;
+    }
+    .a-professional-and-friendly-ca-parent {
+      padding: var(--padding-2xl) 31px var(--padding-8xl) 50px;
+      box-sizing: border-box;
+    }
+    .frame-parent {
+      gap: var(--gap-143xl);
+    }
+    .medicust1 {
+      font-size: 24px;
+    }
+    .main {
+      gap: var(--gap-32xl);
+    }
+    .link-frame {
+      padding-top: 94px;
+      box-sizing: border-box;
+      min-width: 100%;
+    }
+    .desktop-5 {
+      gap: var(--gap-32xl);
+      padding-bottom: 53px;
+      box-sizing: border-box;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .medicust {
+      font-size: var(--font-size-xl);
+    }
+    .a-professional-and {
+      font-size: var(--font-size-11xl);
+      line-height: 31px;
+    }
+    .medical-and-health {
+      font-size: var(--font-size-lg);
+      line-height: 22px;
+    }
+    .a-professional-and1 {
+      font-size: 42px;
+      line-height: 46px;
+    }
+    .excepteur-sint-occaecat {
+      font-size: var(--font-size-base);
+      line-height: 22px;
+    }
+    .a-professional-and-friendly-ca-parent {
+      gap: var(--gap-24xl);
+      padding-left: var(--padding-xl);
+      box-sizing: border-box;
+    }
+    .frame-parent {
+      gap: var(--gap-143xl);
+    }
+    .medicust1 {
+      font-size: var(--font-size-lg);
+    }
+    .enter-phone-number {
+      gap: var(--gap-15xl);
+    }
+    .link-frame1 {
+      gap: var(--gap-11xl);
+    }
+  }
+
+
+  /* All button */
+  button:hover{
+    background-color: #0088FF;
+  }
+
+  .register{
+    background: none;
+    font-size: 15px;
+    padding: 5px;
+    
+  }
+  .register:hover{
+    background: none;
+  }
+
+  .pass-show{
+    text-decoration: none;
+    font-size: 15px;
+    color: grey;
+    font-weight: 1px;
+    padding: 10px;
+  }

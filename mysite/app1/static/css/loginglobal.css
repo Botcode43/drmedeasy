@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-inter: Inter;
+  --font-open-sans: "Open Sans";
+  --font-ubuntu: Ubuntu;
+  --font-roboto: Roboto;
+
+  /* font sizes */
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+  --font-size-11xl: 30px;
+  --font-size-lg: 18px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-dodgerblue-100: #0088ff;
+  --color-darkgray-100: #999;
+  --color-dimgray-100: #636b6a;
+  --color-dimgray-200: #666;
+  --color-whitesmoke: #f8f8f8;
+  --color-lightgray: #cccdd3;
+  --color-lightskyblue: #80c3ff;
+
+  /* Gaps */
+  --gap-32xl: 51px;
+  --gap-25xl: 44px;
+  --gap-5xs: 8px;
+  --gap-143xl: 162px;
+  --gap-24xl: 43px;
+
+  /* Paddings */
+  --padding-8xl: 27px;
+  --padding-xl: 20px;
+  --padding-23xl: 42px;
+  --padding-5xl: 24px;
+  --padding-smi: 13px;
+  --padding-12xl: 31px;
+  --padding-mini: 15px;
+  --padding-2xl: 21px;
+  --padding-base: 16px;
+
+  /* Border radiuses */
+  --br-3xs: 10px;
+  --br-8xs: 5px;
+  --br-5xs: 8px;
+}
