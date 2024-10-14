@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.core.validators import RegexValidator
 
 
 class ProfileManager(models.Manager):
@@ -21,22 +22,55 @@ class info(models.Model):
     def __str__(self):
         return self.user.username
 
+
+
 class doctor(models.Model):
     def generate_category():
-      cat=[('CARDIOLOGIST','cardiologist'),('ENT SPECIALISTS','ent specialists'),('GENERAL MEDICINE','general medicine'),('GYNAECOLOGY','gynaecology'),('OPHTHALMOLOGY','ophthalmology'),('ORTHOPAEDIC SURGEON','orthopaedic surgeon' ),('PEADIATRIC','peadiatric')]
-      choices=[]
-      for value,label in cat :
-        choices.append((value, label))
-
-             # Add lowercase choice
-        choices.append((value.lower(), label.lower()))
-
-           
-        choices.append((value.upper(), label.upper()))
+        cat = [
+            ('CARDIOLOGIST', 'cardiologist'),
+            ('DERMATOLOGIST', 'dermatologist'),
+            ('ENDOCRINOLOGIST', 'endocrinologist'),
+            ('GASTROENTEROLOGIST', 'gastroenterologist'),
+            ('HEMATOLOGIST', 'hematologist'),
+            ('NEUROLOGIST', 'neurologist'),
+            ('OBSTETRICIAN-GYNECOLOGIST', 'obstetrician-gynecologist'),
+            ('ONCOLOGIST', 'oncologist'),
+            ('OPHTHALMOLOGIST', 'ophthalmologist'),
+            ('ORTHOPEDIC SURGEON', 'orthopedic surgeon'),
+            ('PEDIATRICIAN', 'pediatrician'),
+            ('PULMONOLOGIST', 'pulmonologist'),
+            ('PSYCHIATRIST', 'psychiatrist'),
+            ('RADIOLOGIST', 'radiologist'),
+            ('RHEUMATOLOGIST', 'rheumatologist'),
+            ('UROLOGIST', 'urologist')
+        ]
+        choices = []
+        for value, label in cat:
+            choices.append((value, label))
+            
+            choices.append((value.lower(), label.lower()))
+            
+            choices.append((value.upper(), label.upper()))
         return choices
-    pf_choice=generate_category()
-    category=models.CharField(max_length=100,choices=pf_choice,blank=False)
+
+    pf_choice = generate_category()
+    
+
+    name = models.CharField(
+        max_length=100, 
+        validators=[RegexValidator(regex=r'^Dr\.', message="Name should start with 'Dr.'")]
+    )
+    email = models.EmailField(unique=True)
+    qualification = models.CharField(max_length=100)
+    address = models.CharField(max_length=255)
+    phone_number = models.CharField(
+        max_length=15,
+        validators=[RegexValidator(regex=r'^\+?1?\d{9,15}$', message="Enter a valid phone number.")]
+    )
+    category = models.CharField(max_length=100, choices=pf_choice, blank=False)
     
     def __str__(self):
-        return self.category
+        return self.name
+
+    
        

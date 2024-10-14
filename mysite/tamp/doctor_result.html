@@ -1,12 +1,12 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="initial-scale=1, width=device-width" />
 
-  <link rel="stylesheet" href="doctor-category-global.css" />
-  <link rel="stylesheet" href="doctor-category-index.css" />
+  <link rel="stylesheet" href="{% static 'css/doctor-result-global.css' %} "/>
+  <link rel="stylesheet" href="{% static 'css/doctor-result-index.css' %} "/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IcoFont:wght@400&display=swap" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
@@ -14,16 +14,17 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lalezar:wght@400&display=swap" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open Sans:wght@400;600;700;800&display=swap" />
 </head>
-
 <body>
+  <form class="main" method="post" action="{% url 'doctor_result' %}">
+    {% csrf_token %}
   <div class="desktop-7">
     <div class="wrapper-f-r-a-m-edesktop">
-      <img class="f-r-a-m-edesktop" alt="" src="Full size background.png" />
+      <img class="f-r-a-m-edesktop" alt="" src="{% static 'images/Full size background.png' %}" />
     </div>
     <div class="group-c-parent">
       <div class="group-c"></div>
       <div class="r-e-c-t-a-n-g-l-emedicust">
-        <img class="object-icon20" loading="eager" alt="" src="Logo.png" />
+        <img class="object-icon20" loading="eager" alt="" src="{% static 'images/Logo.png' %}" />
       </div>
       <h3 class="medicust18">Dr. Med-Ease</h3>
     </div>
@@ -33,43 +34,44 @@
         <div class="f-r-a-m-edrtripathi">
           <div class="t-e-x-tphonenumber">
             <h1 class="choose-a-doctor">
-              Choose a doctor to book your appointment !
+              Choose a doctor to book your appointment!
             </h1>
           </div>
           <button class="cancel"><img class="material-symbolscancel-icon1" loading="eager" alt=""
-              src="cancel button.png" /></button>
+              src="{% static 'images/cancel button.png' %}" /></button>
         </div>
         <div class="f-r-a-m-ecategory">
           <div class="category-frame">
+            {% if results %}
+            {% for doctor in results %}
             <div class="e-l-l-i-p-s-ekamaltripathi4">
               <div class="ellipse-group">
                 <div class="frame-child57"></div>
-                <h3 class="dr-kamal-tripathi1">Dr. Kamal Tripathi</h3>
+                <h3 class="dr-kamal-tripathi1">{{ doctor.name }}</h3>
               </div>
               <div class="bottom4">
                 <div class="bottom-inner3">
                   <div class="frame-parent29">
                     <div class="phone-number-parent2">
-                      <div class="phone-number4">Phone number :</div>
-                      <div class="address4">Address :</div>
+                      <div class="phone-number4">Phone number: {{ doctor.phone_number }}</div>
+                      <div class="address4">Address: {{ doctor.address }}</div>
                     </div>
                     <div class="qualification-parent2">
-                      <div class="qualification4">Qualification :</div>
-                      <div class="category4">Category :</div>
-                      <img class="star-scroe-icon4" loading="eager" alt="" src="star-scroe.png" />
+                      <div class="qualification4">Qualification: {{ doctor.qualification }}</div>
+                      <div class="category4">Category: {{ doctor.category }}</div>
+                      <img class="star-scroe-icon4" loading="eager" alt="" src="{% static 'images/star-scroe.png' %}" />
                     </div>
                   </div>
                 </div>
                 <button class="book-appointment-wrapper2">
                   <div class="book-appointment7">Book Appointment</div>
                 </button>
-
               </div>
             </div>
-
-
-
-
+            {% endfor %}
+            {% else %}
+              <p>No doctors found.</p>
+            {% endif %}
           </div>
           <div class="mainframe">
             <div class="forminputsection">
@@ -83,30 +85,29 @@
           </div>
         </div>
       </section>
-      <div class="formsubmitbutton">
+      <!-- <div class="formsubmitbutton">
         <div class="change-filter-frame-parent">
           <div class="change-filter-frame">
             <div class="view-all-doctors-frame">
               <div class="ready-challenge-rectangle">
                 <h2 class="we-always-ready3">
-                  Any doctor missing in the list ?
+                  Any doctor missing in the list?
                 </h2>
                 <h3 class="we-always-ready4">
-                  Provide us with the doctor details !
+                  Provide us with the doctor details!
                 </h3>
-                <img class="pngtree-cartoon-style-3d-illus-icon1" loading="eager" alt="" src="doctor-image.png" />
+                <img class="pngtree-cartoon-style-3d-illus-icon1" loading="eager" alt="" src="{% static 'images/doctor-image.png' %}" />
               </div>
               <div class="we-always-ready5">
                 Help us to expand our vision by giving details of your
-                preffered doctors
+                preferred doctors
               </div>
             </div>
           </div>
           <form class="main5">
             <div class="form1"></div>
             <div class="main-frame3">
-              <img class="object-icon21" alt="" src="bluelogo.png" />
-
+              <img class="object-icon21" alt="" src="{% static 'images/bluelogo.png' %}" />
               <div class="medicust-wrapper1">
                 <h2 class="medicust19">Dr. Med-Ease</h2>
               </div>
@@ -127,7 +128,7 @@
               <div class="form-label-password-container">
                 <div class="form-label18">Clinic number</div>
                 <div class="form-input19">
-                  <input class="enter-clicnic-phone" placeholder="Enter clicnic phone number" type="text" />
+                  <input class="enter-clicnic-phone" placeholder="Enter clinic phone number" type="text" />
                 </div>
               </div>
               <div class="form-label-password-parent1">
@@ -171,12 +172,13 @@
               <button class="form-link8">
                 <b class="submit5">Submit</b>
               </button>
-            </div>
+            </div> -->
           </form>
         </div>
       </div>
     </main>
-  </div>
+ 
+</div>
 </body>
 
 </html>
