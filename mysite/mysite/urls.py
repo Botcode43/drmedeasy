@@ -23,5 +23,6 @@ urlpatterns = [
     # path('',views.signup,name="signup"),
     # path('homepage/',views.homepage,name='homepage'),
    path("app1/",include('app1.urls')),
+   
   
 ]

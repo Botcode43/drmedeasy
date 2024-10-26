@@ -30,14 +30,14 @@
   </style>
 </head>
 <body>
-  <form method="get" action="{% url 'search' %}">
+  <form method="get" action="{% url 'doctor_search' %}">
     {% csrf_token %}
     
     <div class="doctor-filtering">
-      <img class="frame-parent-icon" alt="" src="{% static 'images/Background frame.png' %}" />
+      <img class="frame-parent-icon" alt="" src="{% static 'img/Background frame.png' %}" />
       <button class="frame-parent">
         <div class="object-wrapper">
-          <img class="object-icon" alt="" src="{% static 'images/Logo.png' %}" />
+          <img class="object-icon" alt="" src="{% static 'img/Logo.png' %}" />
         </div>
         <b class="medicust">Dr. Med-Ease</b>
       </button>
@@ -46,14 +46,18 @@
           <div class="search-frame">
             <div class="doctor-frame">
               <div class="object-within-doctor">
-                <img class="object-icon1" loading="eager" alt="" src="{% static 'images/bluelogo.png' %}" />
+                <img class="object-icon1" loading="eager" alt="" src="{% static 'img/bluelogo.png' %}" />
                 <div class="medicust-text">
                   <h2 class="medicust1">Dr. Med-Ease</h2>
                 </div>
               </div>
-              <button class="all-doctors-text">
-                <div class="all-doctors">Home Page</div>
-              </button>
+              
+                <a href="/app1/home_page" class="all-doctors-text">
+                  <div class="all-doctors">Home Page</div>
+              </a>
+                
+
+              
             </div>
           </div>
           <div class="frame-for-find-your-doctor">
@@ -61,7 +65,7 @@
               <h1 class="find-your-doctor">Find Your Doctor</h1>
               <div class="form-input">
                 <input type="text" class="search-for-doctor" name="q" placeholder="Search for doctor..." type="search" value="{{ query }}" />
-                <img class="filter-vector-icon" alt="" src="{% static 'images/search.png' %}" />
+                <img class="filter-vector-icon" alt="" src="{% static 'img/search.png' %}" />
               </div>
             </div>
           </div>

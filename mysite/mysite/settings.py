@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 from pathlib import Path
 import os
 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -40,7 +41,14 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "app1",
+    'crispy_forms',
+    'crispy_bootstrap4',
+
 ]
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap4"
+CRISPY_TEMPLATE_PACK = "bootstrap4"
+
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
@@ -127,3 +135,32 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+
+# DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_PORT = 465
+# EMAIL_USE_SSL = True
+# EMAIL_HOST_USER = 'kamaltripathi1431@gmail.com'
+# EMAIL_HOST_PASSWORD = 'jqyp tgxm etfb uiwc'
+# DEFAULT_FROM_EMAIL = '1032220730@tcetmumbai.in'
+
+
+
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_HOST = 'smtp.gmail.com'  # Replace with your SMTP server
+# EMAIL_PORT = 587  # Port for TLS
+# EMAIL_USE_TLS = True  # Enable TLS
+# EMAIL_HOST_USER = 'kamaltripathi1431@gmail.com'
+# EMAIL_HOST_PASSWORD = 'jqyp tgxm etfb uiwc'
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.your-email-provider.com'  # e.g., 'smtp.gmail.com' for Gmail
+EMAIL_PORT = 465 # For TLS (or 465 for SSL)
+EMAIL_USE_TLS = False  # True for TLS, False for SSL
+
+EMAIL_HOST_USER = 'kamaltripathi1431@gmail.com'
+EMAIL_HOST_PASSWORD = 'jqyp tgxm etfb uiwc'
+
+# # settings.py
+# ENCRYPT_KEY = b'oEwN0JmmEPto1kyArD02SoLI2JAg-MiOngyCyV323p8='

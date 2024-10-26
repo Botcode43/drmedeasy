@@ -6,6 +6,9 @@ from .models import info ,doctor
 from django.contrib.auth import authenticate, login as user_login
 from django.db import models
 from django.views import View
+from django.core.mail import send_mail
+
+from .forms import ExtendedAppointmentForm
 
 # Create your views here.
 def signup(request):
@@ -91,76 +94,24 @@ def userpage(request):
 #     return render(request, 'filter_page.html', {'all_categories': all_categories})
 
 
-# def search_doctors(request):
-#     query = request.GET.get('q') 
-#     category = request.GET.get('category')  
-
-#     if not query and not category:
-#         results = doctor.objects.all()  
-#         return render(request, 'doctor_filter.html', {'results': results})
-#     redirect_args = {}
-#     if query:
-#         redirect_args['q'] = query
-#     if category:
-#         redirect_args['category'] = category
-#     return redirect('doctor_result')  
-
-
-# def doctor_result(request):
-#     query = request.GET.get('q') 
-#     category = request.GET.get('category')  
-#     results = doctor.objects.all()
-
-#     if query:
-#         results = results.filter(
-#             models.Q(name__icontains=query) |
-#             models.Q(specialty__icontains=query)
-#         )
-
-#     if category:
-#         results = results.filter(specialty__iexact=category)
-
-    
-#     return render(request, 'doctor_result.html', {'results': results, 'query': query, 'category': category})
-
-
-
-
-
 def search_doctors(request):
-    query = request.POST.get('q')
-    category = request.POST.get('category')
+    query = request.GET.get('q') 
+    category = request.GET.get('category')  
 
-    # Initialize results with an empty QuerySet to avoid overwriting
-    results = doctor.objects.none()
-
+    if not query and not category:
+        results = doctor.objects.all()  
+        return render(request, 'doctor_filter.html', {'results': results})
+    redirect_args = {}
     if query:
-        results |= doctor.objects.filter(
-            models.Q(name__icontains=query) |
-            models.Q(specialty__icontains=query)
-        )
-
+        redirect_args['q'] = query
     if category:
-        results |= doctor.objects.filter(specialty__iexact=category)
-
-    # Check if results are empty and provide a suitable message
-    if not results:
-        messages.info(request, "No doctors found matching your criteria.")
-        return redirect('doctor_search')  # Redirect back to search page
-
-    return render(request, 'doctor_result.html', {'results': results, 'query': query, 'category': category})
+        redirect_args['category'] = category
+    return redirect('doctor_result')  
 
 
 def doctor_result(request):
-    # Handle empty query and category gracefully
-    if not request.GET.get('q') and not request.GET.get('category'):
-        messages.info(request, "Please enter a search term or select a category.")
-        return redirect('doctor_search')
-
-    # Rest of the view logic remains the same
-    query = request.GET.get('q')
-    category = request.GET.get('category')
-
+    query = request.GET.get('q') 
+    category = request.GET.get('category')  
     results = doctor.objects.all()
 
     if query:
@@ -172,4 +123,65 @@ def doctor_result(request):
     if category:
         results = results.filter(specialty__iexact=category)
 
+    
     return render(request, 'doctor_result.html', {'results': results, 'query': query, 'category': category})
+
+
+def home_page(request):
+     return render(request,'home_page.html')
+    
+
+
+
+
+def book_appointment(request):
+    if request.method == 'POST':
+        form = ExtendedAppointmentForm(request.POST, request.FILES)  # Include request.FILES
+        if form.is_valid():
+            # Collect data from the form
+            full_name = form.cleaned_data['full_name']
+            email = form.cleaned_data['email']
+            phone_number = form.cleaned_data['phone_number']
+            gender = form.cleaned_data['gender']
+            age = form.cleaned_data['age']
+            address = form.cleaned_data['address']
+            symptoms = form.cleaned_data['symptoms']
+            date = form.cleaned_data['date']
+            session = form.cleaned_data['session']
+            report = form.cleaned_data['previous_report']
+
+            # Prepare email content
+            subject = f"New Appointment Request from {full_name}"
+            message = (
+                f"Name: {full_name}\n"
+                f"Email: {email}\n"
+                f"Phone Number: {phone_number}\n"
+                f"Gender: {gender}\n"
+                f"Age: {age}\n"
+                f"Address: {address}\n"
+                f"Symptoms: {symptoms}\n"
+                f"Preferred Date: {date}\n"
+                f"Preferred Session: {session}\n"
+            )
+
+            # Include report info only if a file is uploaded
+            if report:
+                message += f"Report: {report.name}\n"  # Just include the filename or any other info you want
+
+            # Send the email (make sure to configure EMAIL_BACKEND settings in settings.py)
+            send_mail(
+                subject,
+                message,
+                email,  # From email
+                ['ajeet1973.at@gmail.com'],  # To email (doctor)
+                fail_silently=False,
+            )
+
+            return redirect('appointment_success')  # Redirect to success page
+    else:
+        form = ExtendedAppointmentForm()
+
+    return render(request, 'appointment_form.html', {'form': form})
+
+def appointment_success(request):
+    return render(request, 'appointment_success.html')

@@ -1,0 +1,752 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="{% static 'css/home-global.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/home-index.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=IcoFont:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lalezar:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open Sans:wght@400;600;700;800&display=swap"
+    />
+  </head>
+  <body>
+    <form method="get" action="{% url 'home_page' %}">
+      {% csrf_token %}
+    <div class="frame-root">
+      <section class="text8">
+        <div class="frame-parent30">
+          <header class="frame-header">
+            <div class="frame-parent31">
+              <div class="frame14"></div>
+              <div class="object-wrapper">
+                <img
+                  class="object-icon25"
+                  loading="eager"
+                  alt=""
+                  src="{% static 'img/Logo.png' %}"
+                />
+              </div>
+              <h3 class="medicust23">Dr. Med-Ease</h3>
+            </div>
+            
+            <button class="text9" onclick="changeButtonColor(this)">
+              <div class="home27">Home</div>
+            </button>
+            <button class="text10" onclick="changeButtonColor(this)">
+              <div class="home28">About</div>
+            </button>
+            <button class="text11" onclick="changeButtonColor(this)">
+              <div class="home29">Blog</div>
+            </button>
+            <button class="text12" onclick="changeButtonColor(this)">
+              <div class="home30">Contact us</div>
+            </button>
+          </header>
+          <div class="text13">
+            <div class="a-professional-and-friendly-ca-container">
+              <h1 class="a-professional-and10">Dr.Med-Ease</h1>
+            </div>
+            <div class="medical-and-health-container">
+              <h3 class="medical-and-health6">Medical And Health</h3>
+              <h1 class="a-professional-and11">
+                A professionaland friendly careprovider.
+              </h1>
+              <div class="excepteur-sint-occaecat14">
+                Get your personalized doctor appointment done through our
+                website !
+              </div>
+        
+                <a href="/app1/doctor_search" class="text14">
+                  <div class="all-doctors7">Find Nearest Doctors</div>
+              </a>
+              
+            </div>
+          </div>
+        </div>
+        <div class="frame-parent-parent">
+          <div class="frame-parent32">
+            <div class="frame-parent33">
+              <a href="/app1/login" class="get-appoinment-wrapper">
+                <div class="get-appoinment6">Login</div>
+            </a>
+            <a href="/app1/signup" class="get-appoinment-wrapper">
+              <div class="get-appoinment6">Sign-Up</div>
+          </a>
+             
+            </div>
+          </div>
+          <div class="frame-parent34">
+            <div class="oval-parent">
+              <div class="oval6"></div>
+              <div class="oval7"></div>
+              <div class="oval8"></div>
+            </div>
+            <div class="pngtree-cartoon-style-3d-illus-wrapper">
+              <img
+                class="pngtree-cartoon-style-3d-illus-icon3"
+                loading="eager"
+                alt=""
+                src="{% static 'img/doctor-image.png' %}"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="frame-root-inner">
+        <div class="dorcotr-1-group">
+          <img
+            class="dorcotr-1-icon2"
+            loading="eager"
+            alt=""
+            src="{% static 'img/dorcotr 1.png' %}"
+          />
+
+          <div class="frame-parent35">
+            <div class="need-a-doctor-for-checkup-cal-parent">
+              <h1 class="need-a-doctor4">
+                Need a doctor for checkup?Use our services to Book an
+                appointment!
+              </h1>
+              <h3 class="excepteur-sint-occaecat-container2">
+                <p class="let-dr-med-ease-help-you2">
+                  <span class="le2">Le</span>t Dr. Med-ease help you !
+                </p>
+                <p class="book-your-appoitnment2">
+                  Book your appoitnment , Schedule it acccording to your need !
+                </p>
+              </h3>
+            </div>
+            <div class="frame-parent36">
+              
+                <a href="/app1/doctor_search" class="book-an-appointment-group">
+                  <div class="book-an-appointment3">Book an appointment</div>
+                  <img class="group-icon3" alt="" src="{% static 'img/Group.png' %}" />
+              </a>
+            
+                
+              </button>
+              <button class="medicine-recommendation-group">
+                <div class="medicine-recommendation2">
+                  Medicine Recommendation
+                </div>
+                <img
+                  class="vector-icon33"
+                  alt=""
+                  src="{% static 'img/Vector.png' %}"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="frame-list">
+        <div class="image-container">
+          <h1 class="our-all-department4">Our Services</h1>
+          <div class="duis-aute-irure63">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore fugiatsunt culpa officia deserunt mollit anim est
+            laborum.
+          </div>
+        </div>
+        <div class="children-box">
+          <div class="bottom5">
+            <img
+              class="divhelpful-card-icon8"
+              loading="eager"
+              alt=""
+              src="{% static 'img/booking.png' %}"
+            />
+
+            <div class="nested-frames-set">
+              <div class="inner-container">
+                <b class="heading-416">Personalized appointment booking</b>
+              </div>
+            </div>
+            <div class="image-with-text-frame">
+              <div class="heading-417">01</div>
+              <div class="when-deciding-which-container12">
+                <span>
+                  <p class="when-deciding-which8">
+                    When deciding which charity to
+                  </p>
+                  <p class="donate-to-it8">
+                    donate to, it important to do your
+                  </p>
+                  <p class="research8">research.</p>
+                </span>
+              </div>
+            </div>
+            <div class="content-frame-set">
+              <button class="sub-container">
+                <div class="link-read8">Read More</div>
+                <img class="link-icon8" alt="" src="{% static 'img/Link.png' %}" />
+              </button>
+            </div>
+          </div>
+          <div class="bottom6">
+            <img
+              class="divhelpful-card-icon9"
+              alt=""
+              src="{% static 'img/medicine.png' %}"
+            />
+
+            <b class="heading-418">Medicine Recommendation</b>
+            <div class="heading-4-02-group">
+              <div class="heading-419">02</div>
+              <div class="when-deciding-which-container13">
+                <span>
+                  <p class="when-deciding-which9">
+                    When deciding which charity to
+                  </p>
+                  <p class="donate-to-it9">
+                    donate to, it important to do your
+                  </p>
+                  <p class="research9">research.</p>
+                </span>
+              </div>
+            </div>
+            <div class="bottom-inner4">
+              <button class="link-read-more-parent2">
+                <div class="link-read9">Read More</div>
+                <img class="link-icon9" alt="" src="{% static 'img/Link.png' %}" />
+              </button>
+            </div>
+          </div>
+          <div class="bottom7">
+            <img
+              class="divhelpful-card-icon10"
+              alt=""
+              src="Chatbot-e1593960478294.jpg"
+            />
+
+            <b class="heading-420">Ai chat bot support </b>
+            <div class="heading-4-03-group">
+              <div class="heading-421">03</div>
+              <div class="when-deciding-which-container14">
+                <span>
+                  <p class="when-deciding-which10">
+                    When deciding which charity to
+                  </p>
+                  <p class="donate-to-it10">
+                    donate to, it important to do your
+                  </p>
+                  <p class="research10">research.</p>
+                </span>
+              </div>
+            </div>
+            <div class="bottom-inner5">
+              <button class="link-read-more-parent3">
+                <div class="link-read10">Read More</div>
+                <img class="link-icon10" alt="" src="{% static 'img/Link.png' %}" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="image-and-text-block">
+        <div class="three-frames-vertical">
+          <h1 class="professional-care-provider4">Our Team Members</h1>
+          <div class="duis-aute-irure64">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore fugiatsunt culpa officia deserunt mollit anim est
+            laborum.
+          </div>
+        </div>
+        <div class="single-review-frame-parent">
+          <div class="single-review-frame">
+            <div class="update-section">
+              <img
+                class="images-icon20"
+                loading="eager"
+                alt=""
+                src="{% static 'img/male logo.jpg' %}"
+              />
+
+              <h3 class="chriss-taylor14">Kamal Tripathi</h3>
+              <b class="team-leader3">Team leader</b>
+            </div>
+          </div>
+          <div class="title-frame2">
+            <img class="images-icon20" alt="" src="{% static 'img/male logo.jpg' %}" />
+
+            <h3 class="chriss-taylor15">rohit sonar</h3>
+            <b class="member9">Member</b>
+          </div>
+          <div class="title-frame3">
+            <img class="images-icon20" alt="" src="{% static 'img/male logo.jpg' %}" />
+
+            <h3 class="chriss-taylor16">Ansh Viswakarma</h3>
+            <b class="member10">Member</b>
+          </div>
+          <div class="title-frame4">
+            <img class="images-icon20" alt="" src="{% static 'img/male logo.jpg' %}" />
+
+            <h3 class="chriss-taylor17"></h3>
+            <b class="member11">Member</b>
+          </div>
+        </div>
+      </section>
+      <section class="product-designer-frame1">
+        <div class="dolor-in-frame">
+          <h2 class="duis-aute-irure65">
+            Want to be a contributor to our community ?
+          </h2>
+        </div>
+      </section>
+      <section class="frame-parent37">
+        <div class="object-frame-wrapper">
+          <div class="object-frame2">
+            <div class="medicust-frame1">
+              <div class="quick-links-section2">
+                <div class="blog-post-frame3">
+                  <div class="excepteur-sint-frame">
+                    <div class="oval9"></div>
+                    <div class="frame-text4">
+                      <div class="amber-morales-p-d">
+                        <h3 class="join-our-team4">Join our team</h3>
+                        <div class="lorem-ipsum-dolor41">
+                          Lorem ipsum dolor ametconsectetur adipiscing elitsed
+                          eiusmod tempor
+                        </div>
+                      </div>
+                      <button class="join-team"> <img
+                        class="reviews-section-icon"
+                        loading="eager"
+                        alt=""
+                        src="{% static 'img/Frame 21.png' %}"
+                      /></button>
+                     
+                    </div>
+                  </div>
+                </div>
+                <div class="oval10"></div>
+              </div>
+            </div>
+            <div class="oval11"></div>
+          </div>
+        </div>
+        <div class="departments-list1">
+          <div class="quick-links-bar">
+            <div class="oval12"></div>
+            <div class="oval13"></div>
+            <div class="occaecat-cupidatat">
+              <div class="non-proident-su">
+                <img
+                  class="object-icon26"
+                  alt=""
+                  src="{% static 'img/bluelogo.png' %}"
+                />
+
+                <div class="object-medicust">
+                  <h2 class="medicust24">Dr. Med-Ease</h2>
+                </div>
+              </div>
+              <div class="optician">
+                <div class="pediatrics">
+                  <div class="form-label28">Name</div>
+                  <div class="form-input28">
+                    <input
+                      class="enter-your-name7"
+                      placeholder="Enter your name"
+                      type="text"
+                    />
+                  </div>
+                </div>
+                <div class="pediatrics1">
+                  <div class="form-label29">Email</div>
+                  <div class="form-input29">
+                    <input
+                      class="enter-your-email7"
+                      placeholder="Enter your Email"
+                      type="text"
+                    />
+                  </div>
+                </div>
+                <div class="pediatrics2">
+                  <div class="form-label30">Phone number</div>
+                  <div class="form-input30">
+                    <input
+                      class="enter-your-number1"
+                      placeholder="Enter your number"
+                      type="text"
+                    />
+                  </div>
+                </div>
+                <div class="pediatrics3">
+                  <div class="form-label31">Description to join our team</div>
+                  <textarea
+                    class="form-input31"
+                    placeholder="Write about yourself"
+                    rows="{7}"
+                    cols="{21}"
+                  >
+                  </textarea>
+                </div>
+                <button class="form-link10">
+                  <b class="send2">Send</b>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="frame-root-child">
+        <div class="image-container-parent">
+          <div class="image-container1">
+            <h2 class="we-always-ready7">
+              We are always ready for a challenge !
+            </h2>
+            <div class="reviews-section-wrapper">
+              <div class="reviews-section4">
+                <div class="product-cards">
+                  <button class="department-links1">
+                    <img
+                      class="department-links-child"
+                      alt=""
+                      src="{% static 'img/phone number.png' %}"
+                    />
+
+                    <div class="div47"></div>
+                  </button>
+                  <button class="department-links2">
+                    <img
+                      class="department-links-item"
+                      alt=""
+                      src="{% static 'img/mail.png' %}"
+                    />
+
+                    <div class="div48"></div>
+                  </button>
+                </div>
+                <div class="quick-links7">
+                  <b class="b3">+91 91670 39367</b>
+                  <b class="medicustgmailcom6">dr.medease@gmail.com</b>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="frame-with-frame">
+            <div class="object-icon27">
+              <h3 class="duis-aute-irure66">
+                Our goal is to provide a better health service to our users and
+                in this path we aim to give our best !
+              </h3>
+              <div class="lorem-ipsum-dolor42">
+                We are students of thakur college of Engineering and Technology
+                , this is our hackathon project which is under development.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main-content1">
+        <div class="doctor-departments">
+          <h1 class="patient-testimonials4">Patient Reviews</h1>
+          <div class="duis-aute-irure67">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore fugiatsunt culpa officia deserunt mollit anim est
+            laborum.
+          </div>
+        </div>
+        <div class="frame-frame">
+          <div class="frame-parent38">
+            <div class="amber-morales-frame">
+              <div class="amber-morales16">
+                <b class="amber-morales17">Amber Morales</b>
+                <div class="product-designer16">Product Designer</div>
+                <b class="duis-aute-irure68"
+                  >Duis aute irure dolor in reprehevoluptate velit esse cillum
+                  dolosunt culpa officia.</b
+                >
+              </div>
+            </div>
+            <div class="duis-aute-irure69">
+              Duis aute irure dolor in reprehenderit involuptate velit esse
+              cillum dolore fugiatsunt culpa officia deserunt mollit animest
+              laborum.
+            </div>
+            <div class="frame-child60"></div>
+          </div>
+          <div class="frame-parent39">
+            <div class="frame-wrapper6">
+              <div class="amber-morales-parent1">
+                <b class="amber-morales18">Amber Morales</b>
+                <div class="product-designer17">Product Designer</div>
+                <b class="duis-aute-irure70"
+                  >Duis aute irure dolor in reprehevoluptate velit esse cillum
+                  dolosunt culpa officia.</b
+                >
+              </div>
+            </div>
+            <div class="duis-aute-irure71">
+              Duis aute irure dolor in reprehenderit involuptate velit esse
+              cillum dolore fugiatsunt culpa officia deserunt mollit animest
+              laborum.
+            </div>
+            <div class="frame-child61"></div>
+          </div>
+          <div class="root-frame">
+            <div class="content-text1">
+              <div class="content-text2">
+                <div class="content-text3">
+                  <div class="content-text4"></div>
+                  <div class="content-text5">
+                    <b class="amber-morales19">Amber Morales</b>
+                    <div class="product-designer18">Product Designer</div>
+                  </div>
+                </div>
+              </div>
+              <div class="reviews-frame1">
+                <b class="duis-aute-irure72"
+                  >Duis aute irure dolor in reprehevoluptate velit esse cillum
+                  dolosunt culpa officia.</b
+                >
+              </div>
+              <div class="duis-aute-irure73">
+                Duis aute irure dolor in reprehenderit involuptate velit esse
+                cillum dolore fugiatsunt culpa officia deserunt mollit animest
+                laborum.
+              </div>
+            </div>
+          </div>
+          <div class="frame-parent40">
+            <div class="frame-wrapper7">
+              <div class="frame-parent41">
+                <div class="frame-child62"></div>
+                <div class="amber-morales-parent2">
+                  <b class="amber-morales20">Amber Morales</b>
+                  <div class="product-designer19">Product Designer</div>
+                </div>
+              </div>
+            </div>
+            <div class="duis-aute-irure-dolor-in-repre-wrapper1">
+              <b class="duis-aute-irure74"
+                >Duis aute irure dolor in reprehevoluptate velit esse cillum
+                dolosunt culpa officia.</b
+              >
+            </div>
+            <div class="duis-aute-irure75">
+              Duis aute irure dolor in reprehenderit involuptate velit esse
+              cillum dolore fugiatsunt culpa officia deserunt mollit animest
+              laborum.
+            </div>
+          </div>
+          <div class="frame-parent42">
+            <div class="frame-wrapper8">
+              <div class="frame-parent43">
+                <div class="frame-child63"></div>
+                <div class="amber-morales-parent3">
+                  <b class="amber-morales21">Amber Morales</b>
+                  <div class="product-designer20">Product Designer</div>
+                </div>
+              </div>
+            </div>
+            <div class="duis-aute-irure-dolor-in-repre-wrapper2">
+              <b class="duis-aute-irure76"
+                >Duis aute irure dolor in reprehevoluptate velit esse cillum
+                dolosunt culpa officia.</b
+              >
+            </div>
+            <div class="duis-aute-irure77">
+              Duis aute irure dolor in reprehenderit involuptate velit esse
+              cillum dolore fugiatsunt culpa officia deserunt mollit animest
+              laborum.
+            </div>
+          </div>
+          <div class="frame-parent44">
+            <div class="frame-wrapper9">
+              <div class="frame-parent45">
+                <div class="frame-child64"></div>
+                <div class="amber-morales-parent4">
+                  <b class="amber-morales22">Amber Morales</b>
+                  <div class="product-designer21">Product Designer</div>
+                </div>
+              </div>
+            </div>
+            <div class="duis-aute-irure-dolor-in-repre-wrapper3">
+              <b class="duis-aute-irure78"
+                >Duis aute irure dolor in reprehevoluptate velit esse cillum
+                dolosunt culpa officia.</b
+              >
+            </div>
+            <div class="duis-aute-irure79">
+              Duis aute irure dolor in reprehenderit involuptate velit esse
+              cillum dolore fugiatsunt culpa officia deserunt mollit animest
+              laborum.
+            </div>
+          </div>
+        </div>
+        <div class="frame-see-more-parent">
+          <div class="frame-see-more">
+            <button class="see-more-reviews-frame">
+              <div class="see-more-reviews3">See more reviews</div>
+            </button>
+            <div class="updates-frame">
+              <h1 class="get-every-single4">Get in touch with us !</h1>
+              <div class="lorem-ipsum-dolor-sit-amet-co-wrapper5">
+                <div class="lorem-ipsum-dolor43">
+                  Connect to us through your mails and also send us your
+                  precious reviews !
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-frame2">
+            <div class="frame-parent46">
+              <div class="duis-aute-irure-dolor-in-repre-parent3">
+                <div class="duis-aute-irure80">Name*</div>
+                <div class="text-frame5">
+                  <input
+                    class="lorem-ipsum-dolor44"
+                    placeholder="Enter your name..."
+                    type="text"
+                  />
+                </div>
+              </div>
+              <div class="duis-aute-irure-dolor-in-repre-parent4">
+                <div class="duis-aute-irure81">Phone number*</div>
+                <div class="lorem-ipsum-dolor-sit-amet-co-wrapper6">
+                  <input
+                    class="lorem-ipsum-dolor45"
+                    placeholder="Enter your number..."
+                    type="text"
+                  />
+                </div>
+              </div>
+              <div class="frame-parent47">
+                <div class="duis-aute-irure-dolor-in-repre-wrapper4">
+                  <div class="duis-aute-irure82">Description*</div>
+                </div>
+                <textarea
+                  class="health-department"
+                  placeholder="Enter your problem/ reviews..."
+                  rows="{5}"
+                  cols="{23}"
+                >
+                </textarea>
+              </div>
+            </div>
+            <div class="blog-post-frame4">
+              <div class="duisaute-frame2">
+                <div class="duis-aute-irure83">Email*</div>
+                <div class="women-health-dept">
+                  <input
+                    class="lorem-ipsum-dolor46"
+                    placeholder="Enter your email..."
+                    type="text"
+                  />
+                </div>
+              </div>
+              <div class="pediatrics4">
+                <button class="departments-frame1">
+                  <div class="duis-aute-irure84">Submit</div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="appointment-blog-post">
+        <div class="shop-product-con">
+          <div class="medicust-frame2">
+            <div class="link-to-blog-post1">
+              <div class="optician-label">
+                <img
+                  class="object-icon28"
+                  alt=""
+                  src="{% static 'img/Logo.png' %}"
+                />
+
+                <div class="doctor-name-label">
+                  <h2 class="medicust25">Dr. Med-Ease</h2>
+                </div>
+              </div>
+              <div class="lorem-ipsum-dolor47">
+                Digitalizing the old tradition of the appointment booking and
+                appointment scheduling . We also provide medicine recommendation
+                system.
+              </div>
+            </div>
+            <div class="seddo-eius-frame">
+              <div class="department-header-frame">
+                <h2 class="deaprtments4">Sections</h2>
+                <div class="family-medicine-womens4">
+                  MedicineDoctor appointmentChat-botAbout UsContact us
+                </div>
+              </div>
+            </div>
+            <div class="quick-links8">
+              <div class="quick-links-parent2">
+                <h2 class="quick-links9">Quick Links</h2>
+                <div class="our-doctors-appointment4">
+                  Our DoctorsAppointmentBlog PostMedicine
+                  recommendationContact Us
+                </div>
+              </div>
+            </div>
+            <div class="blog-post-title-wrapper">
+              <div class="blog-post-title1">
+                <h2 class="blog-post6">Blog Post</h2>
+                <div class="shop-product-link">
+                  <div class="excerpt-link">
+                    <div class="semicolon-text">22.05.2019</div>
+                    <div class="excepteur-sint-occaecat15">
+                      Excepteur sint occaecatcupidatat non proident,sunt in
+                      culpa.
+                    </div>
+                  </div>
+                  <div class="excerpt-link1">
+                    <div class="div49">22.05.2019</div>
+                    <div class="excepteur-sint-occaecat16">
+                      Excepteur sint occaecatcupidatat non proident,sunt in
+                      culpa.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lorem-ipsum-dolor-sit-amet-co-wrapper7">
+          <div class="lorem-ipsum-dolor48">
+            All rights reserved to Dr.Med-Ease . Established in 2024
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+        function changeButtonColor(button) {
+          // Remove the clicked class from all buttons
+          document.querySelectorAll('.text9, .frames-row1, .frames-row2, .frames-row3').forEach(btn => {
+            btn.classList.remove('text9-clicked');
+          });
+      
+          // Add the clicked class to the clicked button
+          button.classList.add('frames-row-clicked');
+        }
+      </script>
+  </body>
+</html>

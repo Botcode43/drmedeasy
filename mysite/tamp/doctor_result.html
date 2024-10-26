@@ -19,12 +19,12 @@
     {% csrf_token %}
   <div class="desktop-7">
     <div class="wrapper-f-r-a-m-edesktop">
-      <img class="f-r-a-m-edesktop" alt="" src="{% static 'images/Full size background.png' %}" />
+      <img class="f-r-a-m-edesktop" alt="" src="{% static 'img/Full size background.png' %}" />
     </div>
     <div class="group-c-parent">
       <div class="group-c"></div>
       <div class="r-e-c-t-a-n-g-l-emedicust">
-        <img class="object-icon20" loading="eager" alt="" src="{% static 'images/Logo.png' %}" />
+        <img class="object-icon20" loading="eager" alt="" src="{% static 'img/Logo.png' %}" />
       </div>
       <h3 class="medicust18">Dr. Med-Ease</h3>
     </div>
@@ -37,8 +37,13 @@
               Choose a doctor to book your appointment!
             </h1>
           </div>
-          <button class="cancel"><img class="material-symbolscancel-icon1" loading="eager" alt=""
-              src="{% static 'images/cancel button.png' %}" /></button>
+          
+            <a href="/app1/home_page" class="cancel">
+              <img class="material-symbolscancel-icon1" loading="eager" alt=""
+              src="{% static 'img/cancel button.png' %}" />
+          </a>
+            
+            
         </div>
         <div class="f-r-a-m-ecategory">
           <div class="category-frame">
@@ -59,13 +64,16 @@
                     <div class="qualification-parent2">
                       <div class="qualification4">Qualification: {{ doctor.qualification }}</div>
                       <div class="category4">Category: {{ doctor.category }}</div>
-                      <img class="star-scroe-icon4" loading="eager" alt="" src="{% static 'images/star-scroe.png' %}" />
+                      <img class="star-scroe-icon4" loading="eager" alt="" src="{% static 'img/star-scroe.png' %}" />
                     </div>
                   </div>
                 </div>
-                <button class="book-appointment-wrapper2">
-                  <div class="book-appointment7">Book Appointment</div>
-                </button>
+                
+                 
+                  <a href="/app1/appointmet" class="book-appointment-wrapper2">
+                    <div class="book-appointment7">Book Appointment</div>
+                </a>
+                
               </div>
             </div>
             {% endfor %}
@@ -75,9 +83,12 @@
           </div>
           <div class="mainframe">
             <div class="forminputsection">
-              <button class="filtertext">
-                Change Filter
-              </button>
+              
+                
+                <a href="/app1/doctor_search" class="filtertext">
+                  <div class="get-appoinment6">Change Filter</div>
+              </a>
+              
               <button class="emaillabel">
                 <b class="view-all-doctors">View all Doctors</b>
               </button>
